@@ -8,6 +8,14 @@ h4{
 .notification{
     border-style: solid;
     border-width: thin solid;
+    margin-bottom: 5px;
+}
+.notification_child{
+  border-style: solid;
+  border-width: thin solid;
+  margin-bottom: 5px;
+  width: 200px;
+  height: 25px;
 }
 
 .employees_management{
@@ -34,7 +42,7 @@ h4{
     cursor: pointer;
   }
   
-  /* Dùng trong <div> để định vị nội dung thả xuống */
+  
   .dropdown {
     position: relative;
     display: inline-block;

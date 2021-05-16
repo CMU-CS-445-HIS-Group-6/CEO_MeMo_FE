@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.esm.min.js"></script> -->
 </head>
 <body>
     <!-- Header -->
@@ -38,30 +41,35 @@
             <!-- Menu -->
             <div class="col-2">
 
-                <div class="dropdown">
-                    <p class="notification">
-                        <i class="fas fa-bell fa-1x"></i>&nbsp;&nbsp;Notification(4)&emsp;&emsp;&emsp;&emsp;&emsp;
-                        
-                            <div>
-                                <button class="dropbtn"><i class="fas fa-sort-down"></i></button>
+                  <div class="notification">
+                      <i class="fas fa-bell fa-1x"></i>&nbsp;&nbsp;Notification(4)&emsp;&emsp;&emsp;&emsp;&emsp;
+                      <div class="dropdown">
+                            <i class="fas fa-sort-down ">
                                 <div class="dropdown-content">
-                                <a href="https://quantrimang.com/hoc-css">CSS và CSS3</a>
-                                <a href="https://quantrimang.com/html">HTML</a>
-                                <a href="https://quantrimang.com/python">Python</a>
+                                  <div class="notification_child">Employee
+
+                                  </div>
+                                  <div class="notification_child">Shareholder</div>
                                 </div>
-                            </div>
-                        
-                    </p>
-                </div>
+                            </i>
+                      </div>  
+                  </div>
                 
+
                 <p class="notification">
                     <i class="fas fa-user-friends"></i>&nbsp;&nbsp;Manager&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                     <i class="fas fa-sort-down"></i>
                 </p>
+
+
+
                 <p class="notification">
                     <i class="fas fa-calendar-week"></i>&nbsp;&nbsp;Statistical&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                     <i class="fas fa-sort-down"></i>
                 </p>
+
+
+
             </div>
 
             <!-- Table Employee-->
@@ -230,3 +238,98 @@
     </div>
 </body>
 </html>
+
+
+<!-- <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<script>
+  $('#menu > li').hover(function() {
+    // khi thẻ menu li bị hover thì drop down menu thuộc thẻ li đó sẽ trượt xuống(hiện)
+    $('.dropdown_menu', this).slideDown();
+  },function() {
+    // khi thẻ menu li bị out không hover nữa thì drop down menu thuộc thẻ li đó sẽ trượt lên(ẩn)
+    $('.dropdown_menu', this).slideUp();
+  });
+
+  $('.dropdown_menu > li').hover(function() {
+    // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt xuống(hiện)
+    $('.submenu', this).slideDown();
+  },function() {
+    // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt lên(ẩnẩn)
+    $('.submenu', this).slideUp();
+  });
+</script>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  #menu {
+    list-style: none;
+    height: 48px;
+  }
+  #menu li {
+    text-align: left;
+    color: #fff;
+  }
+  #menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 15px;
+    color: #fff;
+    background-color: #333;
+  }
+  #menu > li {
+    float: left;
+    border-right: 1px solid #fff;
+    position: relative;
+  }
+  #menu > li > ul.dropdown_menu {
+    position: absolute;
+    list-style: none;
+    display: none;
+    width: 200px;
+  }
+  #menu > li:hover > a {
+    background-color: #5C5C5C;
+  }
+  #menu > li:hover > ul.dropdown_menu {
+    z-index: 100;
+  }
+  ul.dropdown_menu > li {
+    position: relative;
+  }
+  ul.dropdown_menu > li > ul.submenu {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    left: 200px;
+  }
+  ul.dropdown_menu > li:hover > a {
+    background-color: #5C5C5C !important;
+  }
+  ul.dropdown_menu > li:hover > ul.submenu {
+    z-index: 100;
+  }
+  ul.submenu > li:hover > a {
+    background-color: #5C5C5C !important;
+  }
+  .arrow {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  .arrow-down {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #fff;
+  }
+  .arrow-right {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #fff;
+  }
+  </style> -->

@@ -41,34 +41,42 @@
             <!-- Menu -->
             <div class="col-2">
 
-                  <div class="notification">
-                      <i class="fas fa-bell fa-1x"></i>&nbsp;&nbsp;Notification(4)&emsp;&emsp;&emsp;&emsp;&emsp;
-                      <div class="dropdown">
-                            <i class="fas fa-sort-down ">
-                                <div class="dropdown-content">
-                                  <div class="notification_child">Employee
+                <div id="divMenu">    
+                  <ul>    
+                      <li>  
+                        <a href="#">
+                          <i class="fas fa-bell fa-1x"></i>Notification(4)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="fas fa-sort-down "></i>
+                        </a>
+                        <ul>    
+                            <li><a href="#">Employee</a></li>    
+                            <li><a href="#">Shareholder</a></li>     
+                        </ul>    
+                      </li>
 
-                                  </div>
-                                  <div class="notification_child">Shareholder</div>
-                                </div>
-                            </i>
-                      </div>  
-                  </div>
-                
+                      <li>
+                        <a href="#">
+                          <i class="fas fa-user-friends"></i>Manager&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="fas fa-sort-down"></i>
+                        </a>    
+                        <ul>    
+                          <li><a href="#">Homed</a></li>    
+                          <li><a href="#">Homee</a></li>    
+                          <li><a href="#">Homef</a></li>    
+                        </ul>
+                      </li>
 
-                <p class="notification">
-                    <i class="fas fa-user-friends"></i>&nbsp;&nbsp;Manager&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <i class="fas fa-sort-down"></i>
-                </p>
-
-
-
-                <p class="notification">
-                    <i class="fas fa-calendar-week"></i>&nbsp;&nbsp;Statistical&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <i class="fas fa-sort-down"></i>
-                </p>
-
-
+                      <li>
+                        <a href="#"> 
+                          <i class="fas fa-calendar-week"></i>Statistical&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="fas fa-sort-down"></i>
+                        </a>    
+                        <ul>    
+                            <li><a href="#">Homeg</a></li>    
+                            <li><a href="#">Homeh</a></li>    
+                            <li><a href="#">Homei</a></li>    
+                        </ul>
+                    </li>    
+ 
+                  </ul>    
+                  </div> 
 
             </div>
 
@@ -76,10 +84,11 @@
             <div class="col-10">
                 <p class="employees_management">Employees Management</p>
                 
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item button_li"><button>Business</button></li>
-                    <li class="list-group-item button_li"><button>Accounting</button></li>
-                  </ul>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                  <button type="button" class="btn btn-danger">BUSINESS</button>
+                  <button type="button" class="btn btn-warning">ACCOUNTING</button>
+                  
+                </div>
                 
                 
                 <table class="table table-hover table-bordered table-striped">
